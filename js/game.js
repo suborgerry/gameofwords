@@ -1,23 +1,14 @@
 var questWord;
-
 var answerArray = [];
-
 var quetsWordUndeline;
-
 var numOfAtem;
-
 var remainingLetters;
-
 var numOfAtemOfMarcup;
 
 var changeNum = function(num) {
     numOfAtemOfMarcup.innerHTML = ("Колличество попыток: " + num);
     return console.log("Left " + num + " atempts");
 };
-
-var changeUnderline = function() {
-
-}
 
 var sortOutLet = function() {
     if (remainingLetters > 0 && numOfAtem > 0) {
