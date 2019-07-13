@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Угадай слово</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="nameOfHeader">Угадай слово</h1>
+    </header>
+    <main class="mainCont">
+        <div class="mainCont_game">
+            <p id="underLineWord" class="underLineWord"></p>
+            <p class="numOfAttempt" id="numOfAttempt"></p>
+            <form action="#" id="gameForm" class="gameForm">
+                <label for="inputLater" class="gameFomn_label" id="gameFomn_label">Введите слово: </label>
+                <input type="text" required id="inputLater" form="gameForm" placeholder=" Поле для ввода" value="" autocomplete="off" autofocus>
+                <button type="button" id="buttonOfWord" form="gameForm">Начать игру</button>
+            </form>
+            <p id="outputOther" class="outputOther">
+
+            </p>
+            <button type="button" id="reloadForNewGame" class="reloadForNewGame" onclick="reloadForNewGame()">Начать игру заново</button>
+        </div>
+    </main>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
